@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #141414;
+        }
+
+        .header img {
+            height: 40px;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .banner {
+            position: relative;
+            background-image: url('./image/banner.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .banner-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .banner-content h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .banner-content p {
+            margin: 10px 0;
+        }
+
+        .slider {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .slider img {
+            padding: 30px;
+            border-radius: 40px;
+            transition: transform 0.3s;
+          
+        }
+
+        .slider img:hover {
+            transform: scale(1.1);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="./image/logo.png" alt="Netflix Logo"> 
+    </div>
+
+    <div class="main">
+        <div class="banner">
+            <div class="banner-content">
+                <h1>Money Heist</h1>
+                <p>"Gear up for the biggest heist in history. A mysterious mastermind...</p>
+                <button>Play</button>
+                <button>My List</button>
+            </div>
+        </div>
+
+        <h2>Netflix Originals</h2>
+        <div class="slider">
+            <img src="./image/movie1.jpg" alt="Movie 1"> 
+            <img src="./image/movie2.jpg" alt="Movie 2"> 
+            <img src="./image/movie3.jpg" alt="Movie 3"> 
+            <img src="./image/movie4.jpg" alt="Movie 4"> 
+            <img src="./image/movie5.jpg" alt="Movie 5"> 
+        </div>
+    </div>
+
+</body>
